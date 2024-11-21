@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: container-pod
+  namespace: default
+  labels:
+   fire: fox
+    
+spec:
+  containers:
+  - image: linuxserver/firefox
+    name: ugly
+    ports:
+    - containerPort: 3000
