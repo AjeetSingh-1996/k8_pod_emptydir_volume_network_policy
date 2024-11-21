@@ -56,7 +56,7 @@ To use this repository, you will need:
 The `Pod` configuration defines two containers:
 
 - **Container 1 (nginx)**: Uses the `nginx:latest` image to serve web content on port 80.
-- **Container 2 (busybox)**: Uses the `firefox` image and runs a `sleep` command for background tasks.
+- **Container 2 firefox)**: Uses the `firefox` image to access nginx sever .
 
 The two containers share an `emptyDir` volume, which allows them to exchange data.
 
