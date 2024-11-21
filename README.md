@@ -4,7 +4,7 @@ This repository demonstrates how to deploy a **multi-container Pod** in Kubernet
 
 ## Key Features
 
-- **Multi-container Pod**: Runs multiple containers (e.g., Nginx and Busybox) in a single Kubernetes Pod.
+- **Multi-container Pod**: Runs multiple containers (e.g., Nginx and Firefox) in a single Kubernetes Pod.
 - **NetworkPolicy**: Defines ingress and egress rules to control which Pods can communicate with each other.
 - **Shared Volume**: Uses a shared `emptyDir` volume between containers to allow data sharing.
 - **Custom Labels**: Applies labels to the Pod and uses them in the NetworkPolicy to define access rules.
@@ -56,7 +56,7 @@ To use this repository, you will need:
 The `Pod` configuration defines two containers:
 
 - **Container 1 (nginx)**: Uses the `nginx:latest` image to serve web content on port 80.
-- **Container 2 (busybox)**: Uses the `busybox:latest` image and runs a `sleep` command for background tasks.
+- **Container 2 (busybox)**: Uses the `firefox` image and runs a `sleep` command for background tasks.
 
 The two containers share an `emptyDir` volume, which allows them to exchange data.
 
