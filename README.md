@@ -1,0 +1,1 @@
+# k8_pod_emptydir_volume_network_policy
